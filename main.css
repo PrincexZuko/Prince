@@ -1,0 +1,248 @@
+header,section,nav,main,footer,aside{
+    display: block;
+}
+
+body{
+    background-image: url("images/ice.png");
+    background-size: 1580px 400px; 
+    background-repeat: no-repeat;
+    background-color: #222 ;
+    font: 16px/1.5 Trebuchet,arial, sans-serif;
+    margin:0;
+}
+
+#wrap{
+    width: 85%;
+    margin:0px auto;
+   
+}
+
+header{
+    padding:2%;
+    overflow: auto;
+}
+header h1{
+    color: rgb(255, 183, 0);
+    font-size:56px;
+    float:left;
+}
+
+/* header nav element */
+header nav{
+  width: 60%;
+  text-align: right;
+  padding: 5%;
+  float: right;
+}
+nav ul{
+ list-style:none;
+}
+nav li{
+ display: inline;
+ padding-left: 25px;
+}
+nav a{
+  font-family: 'UnifrakturCook', cursive;
+ color: rgb(3, 40, 95);
+ text-decoration:none ;
+ font-weight: bold;
+ font-size:26px;
+}
+nav a:hover {
+  border-bottom: 2px solid rgb(3, 40, 95);
+  }
+  hr {
+    border: 3px solid #87d7ff;
+    width: 1500px;
+    position: relative;
+    right:9%;
+    bottom: 7px;
+  }
+h1{
+  font-family: 'UnifrakturCook', cursive;
+  color: rgb(255, 200, 0);
+    font-size:86px;
+}
+h2{
+  font-family: 'UnifrakturCook', cursive;
+  color: rgb(255, 200, 0);
+    font-size:56px;
+}
+  #leftpic{
+    float: left;
+    border:3px solid rgb(255, 191, 0);
+    margin-right: 15px;
+}
+#rightpic{
+  float: right;
+  border:4px solid rgb(255, 200, 0);
+  margin-right: 15px;
+  width: 340px;
+    height: 210px 
+}
+
+section p{
+  color: #ffffff;
+  padding-left: 20px;
+  width:890px;
+  
+}
+.highlight {
+  color: #e50914;
+}
+
+  aside{
+    float: right;
+    position: absolute;
+    top:60%;
+    right:30px;
+    width: 300px;
+    left:75%;
+   
+}
+
+aside img{
+     border: 7px solid #5563cb;
+     width: 340px;
+     height: 210px  
+     
+}
+aside p{
+  color: rgb(255, 255, 255);
+    text-align: center;
+}
+.vl{
+    
+  border-left: 6px solid #87d7ff;
+  height: 1530px;
+  position: absolute;
+  left: 72%;
+  margin-left: 4px;
+  top: 400px;
+
+}
+  section img{
+    width: 340px;
+    height: 210px 
+    
+}
+.section {
+  float: left;
+  margin: 50px;
+  border: 4px solid rgb(96, 247, 253);
+  padding: 20px;
+  color: white
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  height: 300px; /* set a fixed height for the container */
+}
+
+.column img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; /* set the height to 100% to fill the container */
+  border:5px solid rgb(0, 255, 238);
+}
+
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+  
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+footer{
+  clear:both;
+  background-image: url("images/ice.png");
+  background-size: 1580px 400px; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-color: #222 ;
+  text-align: center;
+  padding: 15px 115px;
+  color: rgb(0, 26, 97);
+
+  /* New CSS properties */
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  right: 9%;
+  margin: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  header nav{
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding: 0;
+  }
+  nav li{
+  display: block;
+  padding: 10px 0;
+  }
+  nav ul{
+  margin: 0;
+  padding: 0;
+  }
+  #leftpic{
+  float: none;
+  margin-right: 0;
+  }
+  #rightpic{
+  float: none;
+  margin-right: 0;
+  width: 100%;
+  height: auto;
+  }
+  aside{
+  position: static;
+  float: none;
+  margin-top: 20px;
+  width: 100%;
+  }
+  .vl{
+  display: none;
+  }
+  section p{
+  width: auto;
+  padding-left: 0;
+  }
+  }
+  
+  @media only screen and (max-width: 425px) {
+  header h1{
+  font-size: 36px;
+  }
+  nav a{
+  font-size: 20px;
+  }
+  h1{
+  font-size: 48px;
+  }
+  h2{
+  font-size: 32px;
+  }
+  section p{
+  font-size: 14px;
+  }
+  #wrap{
+  width: 95%;
+  }
+  .section {
+  margin: 20px;
+  }
+  }
